@@ -1,0 +1,45 @@
+/* Reflow the composition instead of shrinking the whole page. */
+.site,.contact-site{zoom:1}
+:is(.cta,.place-list){max-width:calc(100% - 48px)}
+nav a,nav button{min-height:44px;display:flex;align-items:center;justify-content:center}
+body>.bookshelf-button{bottom:calc(74px + env(safe-area-inset-bottom));right:max(16px,env(safe-area-inset-right))}
+.motion-toggle{bottom:calc(12px + env(safe-area-inset-bottom))}
+@media(min-width:1024px) and (max-width:1279px){
+.header{inset:28px 24px auto}.brand img{width:145px}nav{gap:16px;font-size:14px;padding:8px 16px}.try-button{padding-inline:20px!important}
+.hero-title{left:12%}.hero-phone{left:auto;right:12%}
+.books-label{left:12%;font-size:32px}.books-label strong{font-size:44px}.book-count{left:auto;right:10%;width:360px;height:360px}.book-count>img{width:100%;height:100%}.town-map{left:10%;width:420px}.place-count{left:60%;font-size:32px}
+.about-content{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:48px;margin-inline:10%}.about-content h3{font-size:40px}
+.feature-grid{margin-left:5%;grid-template-columns:453px 453px;column-gap:20px}.features-wave{width:100%;height:100%;object-fit:fill}
+.step,.step-1,.step-2,.step-3{margin-left:18%;grid-template-columns:280px minmax(0,1fr);gap:48px;margin-right:5%}.step-copy p{width:auto;font-size:18px}.step-copy h3{font-size:28px}.step-arrow,.step-1 .step-arrow,.step-2 .step-arrow,.step-3 .step-arrow{left:36%}
+.how-background{width:100%;height:100%;object-fit:fill}
+.follow-content{grid-template-columns:441px minmax(0,1fr);gap:48px;margin-inline:8%}.social-copy p{font-size:18px}
+}
+@media(max-width:1023px){
+.hero-title strong{font-size:clamp(40px,8vw,64px)}
+.town{padding-bottom:0}.town h2{padding-inline:20px}.town-closing{font-size:clamp(24px,4vw,32px)}
+.cta{height:auto;min-height:235px;padding-bottom:36px}.cta>p{position:relative;z-index:1}.cta>.access-link{max-width:100%;font-size:16px}
+.feature-grid{width:100%}.feature{zoom:1;width:min(360px,calc(100vw - 32px));height:auto;aspect-ratio:1}.feature-circle{width:100%;height:100%}.feature-number,.feature-2 .feature-number,.feature-3 .feature-number,.feature-4 .feature-number{left:12%;top:0;font-size:64px;width:auto}.feature-art,.feature-2 .feature-art,.feature-3 .feature-art,.feature-4 .feature-art{width:62%;height:auto;aspect-ratio:1.12;margin:11% auto 3%}.feature h3{font-size:clamp(17px,4.7vw,21px);line-height:1.6;letter-spacing:.02em}
+.how>h2{font-size:clamp(22px,4vw,30px)}
+.step-visual,.step-1 .step-visual,.step-2 .step-visual,.step-3 .step-visual{width:290px;padding-left:92px}
+.step-person,.step-3 .step-person{left:-4px}.step-4 .step-person{left:-16px}.step-badge{left:44px}
+.step-copy br{display:none}.step-copy h3{font-size:22px}
+.social-phones{width:100%;max-width:360px;gap:clamp(12px,4vw,24px);justify-content:center}.social-phones .phone{width:calc((100% - 24px)/2);height:auto;aspect-ratio:201/413}
+.follow footer{padding-inline:24px}.contact-intro{max-width:100%;font-size:14px}.contact-intro:before,.contact-intro:after{display:none}.contact-button{max-width:100%;padding-inline:28px;gap:12px;font-size:17px}.footer-tagline{margin-inline:0;font-size:clamp(19px,4.5vw,28px)}
+.book-controls button{width:44px;height:44px}.book-hint{font-size:14px}
+.contact-site{padding-bottom:170px}
+}
+@media(min-width:600px) and (max-width:1023px){
+.header{inset:28px 36px auto}.brand img{width:156px;height:68px}
+.hero{height:750px}.hero-title{left:10%;top:260px}.hero-title span{font-size:24px}.hero-phone{width:190px;height:391px;right:10%;top:190px}.hero-garden{top:500px;width:1200px;left:calc(50% - 600px)}
+.town-facts{grid-template-columns:1fr 1fr;align-items:center;max-width:800px;margin:70px auto;padding-inline:40px;gap:40px}.town-map{width:280px;height:280px;margin:0 auto}.place-count{font-size:27px}
+.about-content{grid-template-columns:1fr 1.2fr;gap:40px;margin-inline:8%}.about-content>h3{font-size:28px;top:48px}
+.cta{max-width:800px;padding:32px 40px}.cta>p{font-size:26px}.cta-character{width:210px}
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 16px;padding-inline:24px;max-width:840px}.feature{width:100%;grid-area:auto;transform:none}.feature h3{font-size:20px}
+.how{padding-inline:40px}.how>h2{max-width:540px}.steps{max-width:840px;margin-inline:auto}.step,.step-1,.step-2,.step-3{display:grid;grid-template-columns:290px minmax(0,1fr);gap:32px;align-items:center;padding-bottom:150px}.step-copy{max-width:none}.step-copy h3{font-size:24px}
+.place-list{max-width:840px;margin-inline:auto;width:calc(100% - 64px)}.place,.place.reverse{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;padding:32px}.place.reverse .place-placeholder,.place.reverse .place-content{grid-column:auto;grid-row:auto}
+.follow-content{max-width:840px;margin-inline:auto;padding-inline:32px;flex-direction:row;gap:48px}.social-phones{flex:1}.social-copy{flex:1}.follow{padding-bottom:200px}
+}
+@media(max-width:359px){
+.header{inset:18px 16px auto}.hero-title{left:20px}.hero-phone{right:24px}.how{padding-inline:16px}.step-visual,.step-1 .step-visual,.step-2 .step-visual,.step-3 .step-visual{width:272px;padding-left:88px}.step-visual .phone,.step-1 .step-visual .phone,.step-3 .step-visual .phone{width:174px;height:359px}.step-4 .step-person{width:150px;left:-6px}.about-content{margin-inline:16px;gap:14px}.about-copy{font-size:16px}.place,.place.reverse{padding:20px}.cta{padding:22px 18px 32px}.cta>p{font-size:18px}.cta>.access-link{padding-inline:14px;font-size:15px}.follow-content{margin-inline:20px}
+}
+@media(min-width:600px) and (max-width:1023px){.feature-grid{grid-template-rows:auto auto}}

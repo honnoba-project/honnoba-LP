@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="stacked_email">
+<mask id="mask0_0_65" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect id="Bounding box" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_0_65)">
+<path id="stacked_email_2" d="M7 17C6.45 17 5.97917 16.8042 5.5875 16.4125C5.19583 16.0208 5 15.55 5 15V5C5 4.45 5.19583 3.97917 5.5875 3.5875C5.97917 3.19583 6.45 3 7 3H21C21.55 3 22.0208 3.19583 22.4125 3.5875C22.8042 3.97917 23 4.45 23 5V15C23 15.55 22.8042 16.0208 22.4125 16.4125C22.0208 16.8042 21.55 17 21 17H7ZM14 12.3L7 7.425V15H21V7.425L14 12.3ZM14 9.85L21 5H7L14 9.85ZM3 21C2.45 21 1.97917 20.8042 1.5875 20.4125C1.19583 20.0208 1 19.55 1 19V6.5H3V19H19.5V21H3Z" fill="white"/>
+</g>
+</g>
+</svg>

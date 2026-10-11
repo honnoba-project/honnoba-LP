@@ -1,6 +1,6 @@
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('#navigation');
-menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'メニューを閉じる':'メニューを開く');});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','メニューを開く');}));
 const dialog=document.querySelector('#notice');
 document.querySelectorAll('[data-pending]').forEach(b=>b.addEventListener('click',()=>{document.querySelector('#notice-title').textContent=b.dataset.pending;document.querySelector('#notice-body').textContent='ただいま準備中です。\n公開まで、もうしばらくお待ちください。';dialog.showModal();}));
 document.querySelectorAll('.dialog-x,.dialog-close').forEach(b=>b.addEventListener('click',()=>dialog.close()));
